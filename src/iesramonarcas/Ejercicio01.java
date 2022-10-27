@@ -19,6 +19,14 @@ public class Ejercicio01 {
         
         String []animales={"perro","gato","conejo","pollo","leon"};
         
+        String []animales2=new String[5];
+        animales2[0]="perro";
+        animales2[1]="gato";
+        animales2[2]="conejo";
+        animales2[3]="pollo";
+        animales2[4]="lion";
+        
+        
         System.out.println(animales[0]);
         System.out.println(animales[1]);
         System.out.println(animales[2]);

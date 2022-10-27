@@ -32,7 +32,7 @@ public class Ejercicio02 {
             numeros[i]=num;
         }
         
-        //Bucle para mostrarlos
+        //Forma1: Bucle para mostrarlos
         System.out.println("\nARRAY DE NUMEROS");
         System.out.println("------------------");
         for (int i = 0; i < numeros.length; i++) {
