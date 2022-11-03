@@ -21,12 +21,10 @@ public class Ejercicio07 {
         Scanner entrada=new Scanner(System.in);
         String frase,fecha;
         
+        
+        //PARTE A - frase
         System.out.print("Dime una frase:");
         frase=entrada.nextLine();
-        
-        System.out.print("Dime una fecha [dd/mm/aaaa]:");
-        fecha=entrada.nextLine();
-        
         
         //Esta función separa la frase en un array de String usando un delimitador
         //El delimitador es una expresión regular (no es una cadena)
@@ -35,7 +33,7 @@ public class Ejercicio07 {
         //Si usamos "\d" buscará un dígito
         //Si usamos ":" buscara el caracter -->:<--
         
-        String[] palabras=frase.split("\\s");  
+        String[] palabras=frase.split(" ");  
         
         System.out.printf("\n\nLa frase tiene %d palabras\n",palabras.length);
         System.out.print("\n\nLa frase tiene "+palabras.length+" palabras\n");
@@ -45,8 +43,11 @@ public class Ejercicio07 {
             System.out.println(palabras[i]);
             
         }
-         
-      
+       
+        
+        //PARTE B - fecha
+        System.out.print("Dime una fecha [dd/mm/aaaa]:");
+        fecha=entrada.nextLine();
         
         String[] unaFecha=fecha.split("/");  
         
