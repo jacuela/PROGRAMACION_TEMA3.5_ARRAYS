@@ -19,9 +19,9 @@ public class Ejercicio08 {
         Scanner nuevo = new Scanner(System.in);
       
         String [] alumnos = {"Francisco","Marcos","Laura","Marta","Pedro"};
-        double [] primerTrimestre =  {7,8,4,5,6};
-        double [] segundoTrimestre = {4,9,10,5,5};
-        double [] tercerTrimestre =  {1,5,8,2,3};
+        double [] primerTrimestre =  {7,10,4,5,6};
+        double [] segundoTrimestre = {4,10,10,5,5};
+        double [] tercerTrimestre =  {1,10,8,2,3};
         
         double mediaAlumno;
         double sumaPrimerTrim = 0;
@@ -42,7 +42,7 @@ public class Ejercicio08 {
          
          //En realidad, el alumno esta la en posicion-1
          mediaAlumno = (primerTrimestre[posicion-1] + segundoTrimestre[posicion-1] + tercerTrimestre[posicion-1]) / 3;
-         System.out.printf("La media de %s es %.2f",alumnos[posicion],mediaAlumno);
+         System.out.printf("La media de %s es %.2f",alumnos[posicion-1],mediaAlumno);
          
          
          System.out.println("\n\n---------- medias del grupo ----------\n");
@@ -51,17 +51,11 @@ public class Ejercicio08 {
          //*************************************
          for (int i = 0; i < primerTrimestre.length; i++) {
              sumaPrimerTrim = sumaPrimerTrim + primerTrimestre[i];   
+             sumaSegundoTrim = sumaSegundoTrim + segundoTrimestre[i];
+             sumaTercerTrim = sumaTercerTrim + tercerTrimestre[i];
          }
          System.out.println("La media del primer trimestre de todo el grupo es: "+(sumaPrimerTrim / (primerTrimestre.length)));
-         
-         for (int i = 0; i < segundoTrimestre.length; i++) {
-             sumaSegundoTrim = sumaSegundoTrim + segundoTrimestre[i];   
-         }
          System.out.println("La media del segundo trimestre de todo el grupo es: "+(sumaSegundoTrim / (segundoTrimestre.length)));
-         
-         for (int i = 0; i < tercerTrimestre.length; i++) {
-             sumaTercerTrim = sumaTercerTrim + tercerTrimestre[i];   
-         }
          System.out.println("La media del tercer trimestre de todo el grupo es: "+(sumaTercerTrim / (tercerTrimestre.length)));
          //********************************************************
      

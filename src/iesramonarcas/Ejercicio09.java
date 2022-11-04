@@ -20,8 +20,8 @@ public class Ejercicio09 {
         // TODO code application logic here
         Scanner entrada=new Scanner(System.in);
         
-        String []nombres = new String[30];
-        int []edades = new int[30];
+        String []nombres = new String[5];
+        int []edades = new int[5];
         String nombre;
         int edad;
         int i;
@@ -34,19 +34,7 @@ public class Ejercicio09 {
         //Voy rellenando el array. Paro cuando llego al final
         //o cuando introduzco un nuemero negativo. El numero negativo
         //lo meto para saber donde esta el final del array
-//        i=0;
-//        do{
-//            System.out.print("\nNombre del alumno [* para terminar]:");
-//            nombre=entrada.nextLine();
-//            nombres[i]=nombre;    
-//            if (!nombre.equals("*")){
-//                System.out.print("Edad del alumno:");
-//                edades[i]=Integer.parseInt(entrada.nextLine());    
-//            }else{
-//                edades[i]=-1;
-//            }
-//            i++;
-//        }while(!nombre.equals("*") && i<nombres.length);
+
         
         for (int j = 0; j < nombres.length; j++) {
             
@@ -65,24 +53,24 @@ public class Ejercicio09 {
         }
         
         
-        //Imprimo los resultados
+        //Imprimo los resultados usando un while
         //Recorro el vector hasta el final o hasta encontrar un negativo
-//        i=0;
-//        while (i<nombres.length && !nombres[i].equals("*")){
-//            System.out.print(nombres[i]+"-----");
-//            System.out.println(edades[i]);
-//            i++;
-//        }
-//        
-        for (int j = 0; j < nombres.length; j++) {
-            if (!nombres[j].equals("*")){
-                System.out.print(nombres[j]+"-----");
-                System.out.println(edades[j]);
-            }
-            else
-                break;
-            
+        i=0;
+        while (i<nombres.length && !nombres[i].equals("*")){
+            System.out.print(nombres[i]+"-----");
+            System.out.println(edades[i]);
+            i++;
         }
+        
+//        for (int j = 0; j < nombres.length; j++) {
+//            if (!nombres[j].equals("*")){
+//                System.out.print(nombres[j]+"-----");
+//                System.out.println(edades[j]);
+//            }
+//            else
+//                break;
+//            
+//        }
         
         
         
@@ -94,6 +82,8 @@ public class Ejercicio09 {
         nombreAlumnoMayor=nombres[0];
         nombreAlumnoMenor=nombres[0];
         
+        
+        //Usando un for
         for (int j = 0; j < nombres.length; j++) {
             
             //Si el nombre actual es distinto de *
@@ -119,7 +109,7 @@ public class Ejercicio09 {
         
         
         
-        
+//        //Usando un While        
 //        while (i<edades.length && edades[i]!=-1){
 //            
 //            //Guardo la maxima edad y el alumno de max edad
