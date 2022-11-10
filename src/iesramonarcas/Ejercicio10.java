@@ -40,7 +40,7 @@ public class Ejercicio10 {
 //            }
 //        }
 //        System.out.println("La moda es "+moda);
-//        
+        
 
         
         //OPCION2: puede haber más de una moda
@@ -103,7 +103,10 @@ public class Ejercicio10 {
              System.out.print(", "+modas[i]);
         }
         System.out.println(); 
-        
+      
+
+
+
     }
     
 }

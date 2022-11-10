@@ -34,9 +34,9 @@ public class Ejercicio11 {
         
         
         //Imprimo la matriz (forma1)
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 6; j++) {
-                System.out.print("  "+num[i][j]+"  ");  
+        for (int fila = 0; fila < 3; fila++) {
+            for (int columna = 0; columna < 6; columna++) {
+                System.out.print("  "+num[fila][columna]+"  ");  
             }
             System.out.println("");
         }
