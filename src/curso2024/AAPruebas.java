@@ -42,22 +42,32 @@ public class AAPruebas {
             
         }
         
-        System.out.println("----------------");
-        for (int i = 0; i < edades2.length; i++) {
-            System.out.print("Dime una edad:");
-            edad=Integer.parseInt(teclado.nextLine());
-            edades2[i]=edad;
-        }
+//        System.out.println("----------------");
+//        for (int i = 0; i < edades2.length; i++) {
+//            System.out.print("Dime una edad:");
+//            edad=Integer.parseInt(teclado.nextLine());
+//            edades2[i]=edad;
+//        }
+//        
+//        System.out.println("mostramos el array <edades2>");
+//        for (int i = 0; i < edades2.length; i++) {
+//            System.out.println("Edad:"+edades2[i]);
+//            
+//        }
         
-        System.out.println("mostramos el array <edades2>");
-        for (int i = 0; i < edades2.length; i++) {
-            System.out.println("Edad:"+edades2[i]);
-            
-        }
-        
-        
+        //Podemos hacer copias de array, pero ojo,
+        //hay que clonarlo. Sino, copiamos referencias
         int []edades3;
         
+        edades3=edades;
+        edades3[0]=-1;
+        
+        System.out.println("--------------------");
+        System.out.println("mostramos el array <edades>");
+        for (int i = 0; i < edades.length; i++) {
+            System.out.println("Edad:"+edades[i]);
+            
+        }
        
         
     }
