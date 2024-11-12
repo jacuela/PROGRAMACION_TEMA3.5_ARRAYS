@@ -30,10 +30,8 @@ public class Ejercicio09 {
         int edadMayor;
         int edadMenor;
         
+        //PARTE1 - ARRAY RELLENO AL COMPLETO
         
-        //Voy rellenando el array. Paro cuando llego al final
-        //o cuando introduzco un nuemero negativo. El numero negativo
-        //lo meto para saber donde esta el final del array
 
         
         for (int j = 0; j < nombres.length; j++) {
