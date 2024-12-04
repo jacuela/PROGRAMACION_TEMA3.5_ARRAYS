@@ -41,34 +41,35 @@ public class Ejercicio11 {
             System.out.println("");
         }
         
+        
        
         
         //OPCIONAL
         //Imprimo la matriz (forma2 mas visual)
-        int fila; int columna;
-
-        System.out.println(""); 
-        System.out.println("┌────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┐");
-        System.out.println("│        │  Colum 0 │  Colum 1 │  Colum 2 │  Colum 3 │  Colum 4 │  Colum 5 │");
-        System.out.println("├────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤");
-        
-        
-        for(fila = 0; fila < 3; fila++) {
-            
-            System.out.print("│Fila " + fila+"  │");
-        
-            for(columna = 0; columna < 6; columna++) { 
-              System.out.printf("%10d│", num[fila][columna]); 
-              Thread.sleep(500); // retardo de medio segundo
-            }
-            System.out.println("");
-            
-            if (fila<2)
-              System.out.println("├────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤");
-            else
-            System.out.println("└────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┘");
-    
-        }
+//        int fila; int columna;
+//
+//        System.out.println(""); 
+//        System.out.println("┌────────┬──────────┬──────────┬──────────┬──────────┬──────────┬──────────┐");
+//        System.out.println("│        │  Colum 0 │  Colum 1 │  Colum 2 │  Colum 3 │  Colum 4 │  Colum 5 │");
+//        System.out.println("├────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤");
+//        
+//        
+//        for(fila = 0; fila < 3; fila++) {
+//            
+//            System.out.print("│Fila " + fila+"  │");
+//        
+//            for(columna = 0; columna < 6; columna++) { 
+//              System.out.printf("%10d│", num[fila][columna]); 
+//              Thread.sleep(500); // retardo de medio segundo
+//            }
+//            System.out.println("");
+//            
+//            if (fila<2)
+//              System.out.println("├────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤");
+//            else
+//            System.out.println("└────────┴──────────┴──────────┴──────────┴──────────┴──────────┴──────────┘");
+//    
+//        }
         
     }
     
